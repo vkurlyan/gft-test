@@ -1,0 +1,22 @@
+{
+  "name": "GFT-test",
+  "version": "0.0.1",
+  "homepage": "https://github.com/vkurlyan/gft-test",
+  "authors": [
+    "Valentyn Kurlian"
+  ],
+  "description": "GFT test",
+  "main": "index.html",
+  "keywords": [],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    ".idea"
+  ],
+  "dependencies": {
+    "requirejs": "*"
+  }
+}
