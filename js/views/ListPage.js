@@ -44,7 +44,7 @@ define(['views/List', 'models/List'],
          * Render list quantity when collection is changed
          */
         ListPageView.prototype.collectionChanged = function(){
-            this.elementlistLength.textContent = `${this.listCollection.collection.length} items in list`;
+            this.elementlistLength.textContent = this.listCollection.collection.length + ' items in list';
         };
 
         /**

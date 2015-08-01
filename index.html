@@ -3,7 +3,13 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>GFT test</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--gulp-replace-dev|
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- -->
+    <!--gulp-replace-prod-->
+        <link rel="stylesheet" type="text/css" href="build/css/all.min.css" />
+    <!-- -->
 </head>
 <body>
 <div class="content">
@@ -18,6 +24,11 @@
     </ul>
     <div class="list-length"></div>
 </script>
-<script data-main="js/main" src="bower_components/requirejs/require.js"></script>
+<!--gulp-replace-dev|
+    <script data-main="js/main" src="bower_components/requirejs/require.js"></script>
+<!-- -->
+<!--gulp-replace-prod-->
+    <script src="build/js/app.min.js"></script>
+<!-- -->
 </body>
 </html>

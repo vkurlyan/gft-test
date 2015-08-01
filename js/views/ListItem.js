@@ -18,7 +18,7 @@ define(
          * @returns {ListItemView}
          */
         ListItemView.prototype.render = function(){
-            this.el.innerHTML = `${this.model.text} <button class="delete">Delete</button>`;
+            this.el.innerHTML = this.model.text + ' <button class="delete">Delete</button>';
             this.el.querySelector('.delete').addEventListener('click', ListItemView.prototype.remove.bind(this));
             return this;
         };

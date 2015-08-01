@@ -3,7 +3,8 @@
 }
 
 .content ul{
-    padding-left: 1em;
+    padding: 5px 0 5px 1em;
+    list-style: disc;
 }
 
 .content ul li{
